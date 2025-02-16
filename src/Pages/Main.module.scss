@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+body{
+    margin: 0;
+    padding: 0; 
+    background-color: #1A1C2F;
+    font-family: 'Roboto', sans-serif;
+}
+
+// .container {
+//     display: grid;
+//     grid-template-columns: 1fr; /* Cards responsivos */
+//     gap: 20px;
+//     padding: 20px;
+//     justify-items: center;
+//     align-items: start;
+//     width: 100%;
+// }
+
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    color: #fff;
+    width: 100%;
+    padding: 40px 0px 0px 0px;
+
+    h1{
+        margin-bottom: 35px; 
+    }
+
+    .logo{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    
+        h1{
+           margin-bottom: 35px; 
+        }
+    }
+
+}
+
+// .cardContainer {
+//     display: flex;
+//     justify-content: center;
+//     align-items: flex-start; /* Mantém o conteúdo alinhado ao topo */
+//     flex-grow: 1; /* Para que ocupe o restante da altura da tela */
+//     width: 100%; /* Garante que ocupe toda a largura */
+//     height: auto; /* Remove qualquer limitação de altura */
+//     padding: 20px; /* Garante que o CardLinks ocupe toda a largura disponível */
+// }
