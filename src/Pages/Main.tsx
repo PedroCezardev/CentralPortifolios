@@ -2,10 +2,11 @@ import style from "./Main.module.scss";
 // import Particles from "../Components/Particles/Particles";
 // import ParticlesBackground from "../Components/Particles/ParticlesBackground";
 import CardLinks from "../Components/Cards/CardLinks";
-import nextechIcon from "../assets/LogoNexTech.png";
 import { useEffect } from 'react';
 import 'aos/dist/aos.css'; 
 import AOS from 'aos';
+import nextechIcon from "../assets/LogoNexTech.png";
+import perfilPedro from "../assets/perfilPedro.jpeg";
 
 const Main = () => {
 
@@ -23,9 +24,13 @@ const Main = () => {
               <img src={nextechIcon} alt="Logo" />
               <h1>NEXTECH</h1>
             </div>
-            <h1 data-aos="fade-up" data-aos-delay="200" >
-              Pedro Cezar
-            </h1>
+            <div className={style.profile} data-aos="fade-up" data-aos-delay="200">
+              <img src={perfilPedro} alt="" />
+              <div className={style.titles}>
+                <h1>Pedro Cezar</h1>
+                <p>Criador de Produtos Digitais</p>
+              </div>
+            </div>
         </nav>
         <div className={style.cardContainer} >
             <CardLinks />

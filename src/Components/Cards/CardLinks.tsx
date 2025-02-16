@@ -26,7 +26,7 @@ const CardList = [
         icon: <MdArrowOutward />,
         title: "Realizar orçamento",
         description: "Solicite um orçamento para ter seu próprio site feito por mim.",
-        link: "https://portifolio-rei-dos-sites.vercel.app/",
+        link: "https://api.whatsapp.com/send?phone=81985964761",
     },
     {
         id: 2,

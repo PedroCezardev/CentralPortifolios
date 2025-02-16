@@ -26,7 +26,7 @@ body{
     padding: 40px 0px 0px 0px;
 
     h1{
-        margin-bottom: 35px; 
+        font-size: 1.5rem;
     }
 
     .logo{
@@ -36,6 +36,57 @@ body{
     
         h1{
            margin-bottom: 35px; 
+        }
+    }
+
+    .profile {
+        display: flex;
+        gap: 40px;
+
+        img {
+            width: 5rem;
+            height: 5rem;
+            border-radius: 80px;
+        }
+
+        h1{
+            margin-bottom: 0px; 
+            margin-top: 10px;
+        }
+
+    }
+
+    .titles{
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        flex-direction: column;
+
+        p {
+            color: #a8a8a8;
+        }
+
+    } 
+
+}
+
+@media (max-width: 1000px) {
+
+    .navbar{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .profile {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+
+        img {
+            width: 55rem;
+            height: 55rem;
+            border-radius: 80px;
         }
     }
 
