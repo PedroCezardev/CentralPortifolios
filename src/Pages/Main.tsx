@@ -1,19 +1,24 @@
+import { useEffect } from 'react';
 import style from "./Main.module.scss";
+import CardLinks from "../Components/Cards/CardLinks";
 // import Particles from "../Components/Particles/Particles";
 // import ParticlesBackground from "../Components/Particles/ParticlesBackground";
-import CardLinks from "../Components/Cards/CardLinks";
-import { useEffect } from 'react';
 import 'aos/dist/aos.css'; 
 import AOS from 'aos';
 import nextechIcon from "../assets/LogoNexTech.png";
-import perfilPedro from "../assets/perfilPedro.jpeg";
+import perfilPedro from "../assets/PerfilPedro1x1.jpeg";
+import { BiSolidDownArrow } from "react-icons/bi";
+
+const scrollToCards = () => {
+  document.getElementById("cards")?.scrollIntoView({ behavior: "smooth" });
+};
 
 const Main = () => {
 
   useEffect(() => {
     AOS.init({
-      duration: 1000, // duração padrão da animação
-      offset: 50, // offset padrão da animação
+      duration: 1000,
+      offset: 50,
     });
   }, []);
 
@@ -30,13 +35,14 @@ const Main = () => {
                 <h1>Pedro Cezar</h1>
                 <p>Criador de Produtos Digitais</p>
               </div>
+              <a onClick={scrollToCards} className={style.scroll}> <BiSolidDownArrow className='bx bxs-down-arrow' /> </a>
             </div>
         </nav>
-        <div className={style.cardContainer} >
+        <div className={style.cardContainer} id='cards' >
             <CardLinks />
         </div>
     </section>
   )
 }
 
-export default Main
+export default Main;
