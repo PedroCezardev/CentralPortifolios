@@ -25,6 +25,7 @@ const Main = () => {
   return (
     <section className={style.container}>
         <nav className={style.navbar}>
+          <div className={style.content}>
             <div className={style.logo}  data-aos="fade-up" data-aos-delay="200">
               <img src={nextechIcon} alt="Logo" />
               <h1>NEXTECH</h1>
@@ -35,8 +36,11 @@ const Main = () => {
                 <h1>Pedro Cezar</h1>
                 <p>Criador de Produtos Digitais</p>
               </div>
-              <a onClick={scrollToCards} className={style.scroll}> <BiSolidDownArrow className='bx bxs-down-arrow' /> </a>
             </div>
+          </div>
+          <div onClick={scrollToCards} className={style.scroll}>
+            <BiSolidDownArrow className='bx bxs-down-arrow' /> 
+          </div>
         </nav>
         <div className={style.cardContainer} id='cards' >
             <CardLinks />
