@@ -1,13 +1,13 @@
 import { useEffect } from 'react';
 import style from "./Main.module.scss";
 import CardLinks from "../Components/Cards/CardLinks";
-// import Particles from "../Components/Particles/Particles";
-// import ParticlesBackground from "../Components/Particles/ParticlesBackground";
 import 'aos/dist/aos.css'; 
-import AOS from 'aos';
+import * as AOS from 'aos';
 import nextechIcon from "../assets/LogoNexTech.png";
 import perfilPedro from "../assets/PerfilPedro1x1.jpeg";
 import { BiSolidDownArrow } from "react-icons/bi";
+// import ParticlesBackground from '../Components/Particles/ParticlesBackground';
+import ParticlesComponent from '../Components/Particles/ParticlesComponent';
 
 const scrollToCards = () => {
   document.getElementById("cards")?.scrollIntoView({ behavior: "smooth" });
@@ -25,6 +25,8 @@ const Main = () => {
   return (
     <section className={style.container}>
         <nav className={style.navbar}>
+          <ParticlesComponent />
+          {/* <ParticlesBackground  /> */}
           <div className={style.content}>
             <div className={style.logo}  data-aos="fade-up" data-aos-delay="200">
               <img src={nextechIcon} alt="Logo" />
@@ -38,7 +40,7 @@ const Main = () => {
               </div>
             </div>
           </div>
-          <div onClick={scrollToCards} className={style.scroll}>
+          <div onClick={scrollToCards} className={style.scroll} data-aos="fade-up" data-aos-delay="200">
             <BiSolidDownArrow className='bx bxs-down-arrow' /> 
           </div>
         </nav>
